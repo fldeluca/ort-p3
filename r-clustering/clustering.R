@@ -1,7 +1,3 @@
-#Libraries
-library(ggplot2)
-library(ggdendro)
-
 #Datasets
 dataset <- read.csv('~/ort-p3/datasets/AggregationClusters2.csv')
 
@@ -46,6 +42,8 @@ ggplot() + geom_point(aes(x = X, y = Y, color = cluster), data = dataset, size =
   scale_colour_gradientn(colours=rainbow(4)) +
   ggtitle('Clusters de Datos con k = 3 / Agrupamiento Jerárquico') +
   xlab('X') + ylab('Y')
+
+
 
 
 
